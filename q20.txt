@@ -1,0 +1,12 @@
+replace trigger mytrig
+after insert or update or delete
+on assign
+referencing 
+new row as new
+for each row
+begin
+update project set numEmployeesAssigned=(
+select count(new.empid)
+from assign
+where new.projno=assign.projno);
+end;

@@ -1,0 +1,2 @@
+select projname, projno from view1
+where empid=101 --typo on word file

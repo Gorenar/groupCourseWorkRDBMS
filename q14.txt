@@ -1,0 +1,3 @@
+select projno, count(empid) as NoOfWorkers, sum(hoursassigned)as totalHours
+from assign
+group by projno

@@ -1,0 +1,7 @@
+select concat(worker.lastname,worker.firstname) as name, assign.rating
+from worker join assign on worker.empid=assign.empid
+join project on project.projno=assign.projno
+where assign.projno in (
+select assign.projno as projno from assign join worker on assign.empid=worker.empid
+where project.projmgrid in (select empid from worker where lastname='Burns' and firstname='Michael'))
+order by name

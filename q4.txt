@@ -1,0 +1,1 @@
+select concat(worker.lastname,worker.firstname) as name

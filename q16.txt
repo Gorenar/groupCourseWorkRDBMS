@@ -1,0 +1,7 @@
+select projno,projname,startdate
+from project 
+where startdate in(
+select startdate
+from project
+group by startdate 
+having count(startdate)>1)
