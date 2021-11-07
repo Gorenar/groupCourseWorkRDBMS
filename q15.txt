@@ -1,0 +1,4 @@
+--15
+select concat(worker.lastname,worker.firstname) as name
+from assign join worker on assign.empid=worker.empid
+where assign.projno is null

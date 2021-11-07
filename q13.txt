@@ -1,0 +1,5 @@
+--13
+select project.projno,concat(worker.lastname,worker.firstname) as name,worker.empid
+from project join assign on project.projno=assign.projno
+join worker on worker.empid=assign.empid
+where project.startdate>'01-SEP-21'

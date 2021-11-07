@@ -1,0 +1,13 @@
+--11
+insert into worker(Empid,lastname,firstname,departmentid,birthdate,hiredate,salary)
+values (450,'Mantas','Vasilis',2,'10-NOV-96','05-NOV-20',100000)
+insert into worker(Empid,lastname,firstname,departmentid,birthdate,hiredate,salary)
+values (451,'Moiras','Dimitris',2,'25-SEP-00','05-NOV-20',100000);
+insert into assign(projno,empid,hoursassigned,rating)
+values (1001,450,30,5);
+insert into assign(projno,empid,hoursassigned,rating)
+values (1005,450,30,5);
+insert into assign(projno,empid,hoursassigned,rating)
+values (1001,451,30,5);
+insert into assign(projno,empid,hoursassigned,rating)
+values (1005,451,30,5);

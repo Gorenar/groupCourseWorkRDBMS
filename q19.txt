@@ -1,0 +1,8 @@
+--19
+alter table project
+add  numEmployeesAssigned int
+
+update project set numEmployeesAssigned=(
+select count(empid)
+from assign
+where projno=project.projno)

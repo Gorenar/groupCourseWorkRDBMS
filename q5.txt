@@ -1,0 +1,6 @@
+---5
+select concat(worker.lastname,worker.firstname) as name
+from worker join dept on worker.departmentid=dept.departmentid
+where dept.departmentname='Research'
+order by worker.salary asc
+fetch first 1 rows only;

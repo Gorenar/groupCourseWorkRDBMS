@@ -1,0 +1,4 @@
+--1
+select concat(worker.lastname,worker.firstname) as name
+from worker join dept on worker.departmentid=dept.departmentid
+where dept.departmentname='Accounting'

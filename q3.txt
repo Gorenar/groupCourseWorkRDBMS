@@ -1,0 +1,2 @@
+--3
+select empid,concat(lastname,firstname) as name,round(salary/12,2) as monthly_salary from worker;

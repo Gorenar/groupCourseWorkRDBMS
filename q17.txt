@@ -1,0 +1,10 @@
+--17
+
+alter table project
+add status varchar(50)
+default 'active'
+
+update project set status='completed'
+where projno=1001
+update project set status='cancelled'
+where projno=1005

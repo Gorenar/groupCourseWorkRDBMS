@@ -1,0 +1,5 @@
+--7
+select concat(worker.lastname,worker.firstname) as name, dept.departmentname
+from worker join dept on worker.departmentid=dept.departmentid
+join assign on worker.empid=assign.empid
+where projno=1019;

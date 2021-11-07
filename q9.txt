@@ -1,0 +1,5 @@
+--9
+create view view1 as 
+select project.projno, project.projname, worker.empid, concat(worker.lastname,worker.firstname) as name
+from project join assign on project.projno=assign.projno
+join worker on assign.empid=worker.empid
